@@ -62,6 +62,7 @@ int main(int argc, char * argv[]) {
   read_points(filepoints, points);
 
   // Compute the proximity graph of the points
+  // TODO: write a kernel for this (see graph_simplicial_complex.h)
   Graph_t prox_graph = compute_proximity_graph(points, threshold
                                                , euclidean_distance<Point_t>);
 
